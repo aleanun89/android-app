@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CEFF74" >
+
+    <ImageView
+        android:id="@+id/fondo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         android:background="#C8D11D"
+   		 android:alpha="0.6"/>
+    
+    <ImageView
+        android:id="@+id/imagen"
+        android:layout_width="198dp"
+        android:layout_height="198dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/abc_ab_bottom_solid_dark_holo" />
+
+    <TextView
+        android:id="@+id/tipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@+id/imagen"
+        android:text="Tipo" />
+
+    <TextView
+        android:id="@+id/reserva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imagen"
+        android:layout_alignLeft="@+id/telefono"
+        android:clickable="true"
+        android:text="Reserva" />
+
+    <TextView
+        android:id="@+id/telefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/reserva"
+        android:layout_alignLeft="@+id/nombre"
+        android:layout_marginBottom="44dp"
+        android:text="Telefono" />
+
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tipo"
+        android:layout_below="@+id/tipo"
+        android:layout_marginTop="32dp"
+        android:text="Nombre" />
+
+    <RatingBar
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/direccion"
+        android:layout_below="@+id/direccion"
+        android:layout_marginTop="51dp" />
+
+    <TextView
+        android:id="@+id/numeros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/rating"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@+id/rating"
+        android:text="puntos" />
+
+    <TextView
+        android:id="@+id/valoracion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/numeros"
+        android:layout_alignRight="@+id/imagen"
+        android:layout_marginRight="30dp"
+        android:text="Valoracion" />
+
+    <TextView
+        android:id="@+id/descripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/titulo"
+        android:text="nanana" />
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rating"
+        android:text="Descripcion" />
+
+    <TextView
+        android:id="@+id/direccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="Direccion" />
+
+</RelativeLayout>

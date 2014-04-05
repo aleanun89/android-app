@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#CEFF74" >
+
+    <Button
+        android:id="@+id/recom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="#88BA17"
+        android:textSize="25dp"
+        android:text="¿Que me recomiendas?" />
+
+    <EditText
+        android:id="@+id/etParam"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#FFFFFF"
+        android:hint="¿Que deseas buscar?"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="25dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <ImageView
+        android:id="@+id/circulo"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/etParam"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/buscar" />
+
+    
+
+    <Button
+        android:id="@+id/tp1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/tp2"
+        android:layout_alignBottom="@+id/tp2"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/restaurante"
+        android:contentDescription="restaurante" />
+
+    <Button
+        android:id="@+id/tp2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/tp3"
+        android:layout_alignBottom="@+id/tp3"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/tp1"
+        android:background="@drawable/hoteles"
+        android:src="@drawable/hoteles" />
+    
+    <Button
+        android:id="@+id/tp3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/tp4"
+        android:layout_alignBottom="@+id/tp4"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/tp2"
+        android:background="@drawable/comedor" />
+    
+    <Button
+        android:id="@+id/tp4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/tp5"
+        android:layout_alignBottom="@+id/tp5"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/tp3"
+        android:background="@drawable/bar" />
+    
+    <Button
+        android:id="@+id/tp5"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/recom"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/tp4"
+        android:background="@drawable/otros" />
+
+    <Button
+        android:id="@+id/tp6"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/tp5"
+        android:layout_alignBottom="@+id/tp5"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/tienda"
+        android:contentDescription="tienda" />
+    
+</RelativeLayout>
